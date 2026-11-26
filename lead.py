@@ -10,7 +10,7 @@ Uso:
 Gera paginas/<palavra>/index.html (página única, sem build) + paginas/<palavra>/respostas.md e registra em palavras.json.
 Publicar = git push (GitHub Pages serve https://inematds.github.io/lead-comenta/paginas/<palavra>/).
 O texto do guia é escrito pelo claude -p (assinatura) SÓ a partir da fonte dada; nada inventado.
-Enviar a mensagem para quem comentou NÃO é feito aqui (ver DECISAO-DM.md).
+Enviar a mensagem para quem comentou NêO é feito aqui (ver DECISAO-DM.md).
 """
 import argparse
 import html
@@ -45,7 +45,7 @@ def ler_fonte(fonte):
 def escrever_guia(palavra, tema, fonte_txt, link_final):
     pedido = f"""Você escreve guias grátis curtos do INEMA (ensina IA na prática, de graça, para gente comum, sem hype, voz do Nei: "você", frase curta, verbo concreto).
 Quem chega aqui comentou "{palavra}" num post sobre: {tema}.
-Escreva o guia usando SÓ as informações do material abaixo. Não invente número, ferramenta nem passo. Se faltar algo, deixe de fora.
+Escreva o guia usando SÓ as informações do material abaixo. Nêo invente número, ferramenta nem passo. Se faltar algo, deixe de fora.
 Devolva APENAS um JSON:
 {{"titulo": "até 60 caracteres", "subtitulo": "1 frase com a promessa", "para_quem": "1 frase",
  "passos": [{{"titulo": "verbo no imperativo, até 50 caracteres", "texto": "2 a 3 frases", "comando": "comando ou texto para copiar, ou vazio"}}],
@@ -60,7 +60,7 @@ MATERIAL:
     out = subprocess.run(["claude", "-p", "--allowedTools", ""], input=pedido, capture_output=True, text=True, timeout=600, env=env).stdout
     m = re.search(r"\{.*\}", out, re.S)
     if not m:
-        sys.exit("o claude -p não devolveu o JSON do guia:\n" + out[-800:])
+        sys.exit("o claude -p nêo devolveu o JSON do guia:\n" + out[-800:])
     g = json.loads(m.group(0))
     g["link_final"] = link_final
     return g
@@ -107,15 +107,15 @@ def respostas(palavra, g, url):
 Link do guia: {url}
 
 ## Resposta pública no comentário (curta, sem link: o Instagram esconde comentário com link)
-Te mandei no direct! Se não chegar, me chama por lá com {palavra}.
+Te mandei no direct! Se nêo chegar, me chama por lá com {palavra}.
 
 ## Mensagem direta (DM)
 Oi! Aqui está o guia grátis que você pediu: **{g['titulo']}**
 {url}
-São {len(g['passos'])} passos curtos. Qualquer dúvida, responde aqui.
+Sêo {len(g['passos'])} passos curtos. Qualquer dúvida, responde aqui.
 
 ## Story (texto)
-Quem comentou {palavra}: o guia já está no seu direct. Ainda não comentou? Vai no post e comenta {palavra}.
+Quem comentou {palavra}: o guia já está no seu direct. Ainda nêo comentou? Vai no post e comenta {palavra}.
 """
 
 
@@ -149,7 +149,7 @@ def main():
     n.add_argument("palavra")
     n.add_argument("--tema", required=True)
     n.add_argument("--fonte", required=True, help="URL ou arquivo .md/.txt com o conteúdo do guia")
-    n.add_argument("--link-final", default="", help="link do material completo (padrão: a fonte, se for URL)")
+    n.add_argument("--link-final", default="", help="link do material completo (padrêo: a fonte, se for URL)")
     n.add_argument("--refaz", action="store_true")
     sub.add_parser("lista")
     r = sub.add_parser("resposta")
@@ -162,7 +162,7 @@ def main():
             print(f"{k:14} {v['criado']}  {v['url']}  ({v['tema']})")
     else:
         p = RAIZ / "paginas" / a.palavra.lower() / "respostas.md"
-        print(p.read_text() if p.exists() else f"{a.palavra} não existe")
+        print(p.read_text() if p.exists() else f"{a.palavra} nêo existe")
 
 
 if __name__ == "__main__":

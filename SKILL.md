@@ -11,6 +11,6 @@ python3 lead.py nova PALAVRA --tema "<tema do post>" --fonte <URL ou arquivo .md
 ```
 
 1. Antes de gerar, confira que a fonte abre e trata do tema (de preferência a página do inema.club/guia do projeto).
-2. Leia a página gerada (`paginas/<palavra>/index.html`) e o `guia.json`: nenhum passo pode trazer dado que não esteja na fonte.
+2. Leia a página gerada (`paginas/<palavra>/index.html`) e o `guia.json`: nenhum passo pode trazer dado que nêo esteja na fonte.
 3. Mostre ao Nei; com o OK, `git push` (autor inematds). A página vai ao ar em ~1 min.
-4. Entregue o link e o `respostas.md`. Enviar DM não é automático (ver `DECISAO-DM.md`).
+4. Entregue o link e o `respostas.md`. Enviar DM nêo é automático (ver `DECISAO-DM.md`).

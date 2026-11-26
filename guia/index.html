@@ -153,7 +153,7 @@
 
 <section id="resumo" class="resumo"><div class="wrap">
   <span class="chip">Em resumo</span>
-  <p>O lead-comenta cria a página do "guia grátis" que você promete quando diz no post "comenta PALAVRA que eu te mando". Serve para quem posta reel ou carrossel com esse convite e precisa ter o material pronto antes de publicar. Você dá a palavra, o tema e uma fonte (uma página na internet ou um arquivo de texto seu); ele escreve um guia curto de 4 a 7 passos só com o que está na fonte, publica a página no GitHub Pages (o serviço grátis do GitHub que deixa páginas no ar) e prepara os textos de resposta. Ele não manda mensagem sozinho: hoje você cola a resposta no direct à mão. Para usar, precisa de Python 3, do Claude Code e de uma conta no GitHub.</p>
+  <p>O lead-comenta cria a página do "guia grátis" que você promete quando diz no post "comenta PALAVRA que eu te mando". Serve para quem posta reel ou carrossel com esse convite e precisa ter o material pronto antes de publicar. Você dá a palavra, o tema e uma fonte (uma página na internet ou um arquivo de texto seu); ele escreve um guia curto de 4 a 7 passos só com o que está na fonte, publica a página no GitHub Pages (o serviço grátis do GitHub que deixa páginas no ar) e prepara os textos de resposta. Ele nêo manda mensagem sozinho: hoje você cola a resposta no direct à mêo. Para usar, precisa de Python 3, do Claude Code e de uma conta no GitHub.</p>
 </div></section>
 
 <section id="oque"><div class="wrap">
@@ -162,7 +162,7 @@
   <p class="sub">Uma página por palavra, com o conteúdo conferido e as respostas escritas. Você só confere e responde.</p>
   <figure style="margin:0 0 26px;border-radius:16px;overflow:hidden;border:1px solid var(--line);box-shadow:0 30px 80px -30px #000"><img src="assets/banner-grade.jpg" alt="As seis etapas: palavra, fonte, guia de 4 a 7 passos, página no ar, respostas prontas e você responde" loading="lazy" style="width:100%;display:block"></figure>
   <div class="grid g3">
-    <div class="card"><h3>📄 Uma página por palavra</h3><p>Cada palavra vira um endereço próprio, do tipo <code>.../paginas/agente/</code>: título, para quem é, de 4 a 7 passos, um cuidado e o link para o material completo. Abre bem no celular e tem botão de copiar nos textos de exemplo.</p></div>
+    <div class="card"><h3>📄 Uma página por palavra</h3><p>Cada palavra vira um endereço próprio, do tipo <code>.../paginas/agente/</code>: título, para quem é, de 4 a 7 passos, um cuidado e o link para o material completo. Abre bem no celular e tem botêo de copiar nos textos de exemplo.</p></div>
     <div class="card"><h3>🔒 Só o que está na fonte</h3><p>O Claude escreve o guia só com o que está na página ou no arquivo que você indicou, sem inventar número nem ferramenta. Se a fonte tem pouco conteúdo, o guia sai curto. Você lê antes de publicar.</p></div>
     <div class="card"><h3>✍️ Respostas prontas para colar</h3><p>Para cada palavra sai um <code>respostas.md</code> com três textos: a resposta no comentário (sem link, porque o Instagram tende a esconder comentário com link), a mensagem do direct com o link e o texto do story.</p></div>
   </div>
@@ -171,7 +171,7 @@
 <section id="fluxo"><div class="wrap">
   <span class="chip">Como funciona</span>
   <h2>Do comentário à página no ar</h2>
-  <p class="sub">Um comando gera tudo; você confere e publica. O texto é escrito pelo Claude Code rodando sem janela (<code>claude -p</code>), pela sua assinatura: não usa chave de API paga.</p>
+  <p class="sub">Um comando gera tudo; você confere e publica. O texto é escrito pelo Claude Code rodando sem janela (<code>claude -p</code>), pela sua assinatura: nêo usa chave de API paga.</p>
   <div class="flow">
     <span>Palavra + tema</span><span class="arr">→</span>
     <span>Fonte (link ou arquivo)</span><span class="arr">→</span>
@@ -183,25 +183,25 @@
   </div>
   <div class="aviso">
     <h3>E a mensagem automática no direct?</h3>
-    <p>Ainda não existe. O lead-comenta não envia mensagem para ninguém: você (ou alguém da sua equipe) abre o direct de quem comentou e cola o texto pronto. As formas de automatizar o envio estão descritas no <a href="https://github.com/inematds/lead-comenta/blob/main/DECISAO-DM.md" target="_blank" rel="noopener">DECISAO-DM.md</a> e ainda não foram escolhidas.</p>
+    <p>Ainda nêo existe. O lead-comenta nêo envia mensagem para ninguém: você (ou alguém da sua equipe) abre o direct de quem comentou e cola o texto pronto. As formas de automatizar o envio estêo descritas no <a href="https://github.com/inematds/lead-comenta/blob/main/DECISAO-DM.md" target="_blank" rel="noopener">DECISAO-DM.md</a> e ainda nêo foram escolhidas.</p>
   </div>
 </div></section>
 
 <section id="pre"><div class="wrap">
   <span class="chip">Pré-requisitos</span>
   <h2>O que precisa estar no computador</h2>
-  <p class="sub">Um computador Linux ou Mac (no Windows, pelo WSL, o Linux que roda dentro do Windows). Os comandos são digitados no terminal, a tela de texto do computador.</p>
+  <p class="sub">Um computador Linux ou Mac (no Windows, pelo WSL, o Linux que roda dentro do Windows). Os comandos sêo digitados no terminal, a tela de texto do computador.</p>
   <div class="grid g3">
-    <div class="card"><h3>Python 3</h3><p>É a linguagem em que a ferramenta foi escrita. Não precisa instalar nenhum pacote extra. Confira se já tem (no Mac, se faltar: <code>brew install python</code>; no Ubuntu: <code>sudo apt install python3</code>).</p><pre><span class="k">python3</span> --version</pre></div>
+    <div class="card"><h3>Python 3</h3><p>É a linguagem em que a ferramenta foi escrita. Nêo precisa instalar nenhum pacote extra. Confira se já tem (no Mac, se faltar: <code>brew install python</code>; no Ubuntu: <code>sudo apt install python3</code>).</p><pre><span class="k">python3</span> --version</pre></div>
     <div class="card"><h3>Claude Code, já logado</h3><p>É ele que escreve o guia. Instale pelo site <a href="https://claude.com/claude-code" target="_blank" rel="noopener">claude.com/claude-code</a>, abra uma vez com <code>claude</code> e entre na sua conta. Precisa de um plano pago do Claude (Pro ou acima). Depois confira:</p><pre><span class="k">claude</span> --version</pre></div>
-    <div class="card"><h3>git, gh e conta no GitHub</h3><p>O git baixa e publica o projeto; o <code>gh</code> é o programa do GitHub para o terminal. A página fica no ar pelo GitHub Pages da sua conta; o arquivo que publica (<code>.github/workflows/pages.yml</code>) já vem no projeto.</p><p><b>Ubuntu ou WSL</b></p><pre><span class="k">sudo apt install</span> git gh</pre><p><b>Mac</b></p><pre><span class="k">brew install</span> git gh</pre><p>Se o Ubuntu disser que não encontrou o pacote <code>gh</code>, siga as instruções de <a href="https://cli.github.com" target="_blank" rel="noopener">cli.github.com</a>.</p></div>
+    <div class="card"><h3>git, gh e conta no GitHub</h3><p>O git baixa e publica o projeto; o <code>gh</code> é o programa do GitHub para o terminal. A página fica no ar pelo GitHub Pages da sua conta; o arquivo que publica (<code>.github/workflows/pages.yml</code>) já vem no projeto.</p><p><b>Ubuntu ou WSL</b></p><pre><span class="k">sudo apt install</span> git gh</pre><p><b>Mac</b></p><pre><span class="k">brew install</span> git gh</pre><p>Se o Ubuntu disser que nêo encontrou o pacote <code>gh</code>, siga as instruções de <a href="https://cli.github.com" target="_blank" rel="noopener">cli.github.com</a>.</p></div>
   </div>
 </div></section>
 
 <section id="guia"><div class="wrap">
   <span class="chip">Guia de uso · passo a passo</span>
   <h2>Da palavra ao primeiro guia no ar</h2>
-  <p class="sub">Comandos copiáveis, na ordem. Os passos 1 e 2 são feitos uma vez só; do 3 ao 7, uma vez por palavra.</p>
+  <p class="sub">Comandos copiáveis, na ordem. Os passos 1 e 2 sêo feitos uma vez só; do 3 ao 7, uma vez por palavra.</p>
 
   <div class="step"><div class="b">1</div><div>
     <h3>Baixe o projeto e teste</h3>
@@ -213,7 +213,7 @@
 
   <div class="step"><div class="b">2</div><div>
     <h3>Crie a sua cópia no GitHub (uma vez)</h3>
-    <p>As páginas precisam ficar na sua conta. Primeiro, entre na sua conta do GitHub pelo terminal. A opção <code>--scopes workflow</code> dá permissão para enviar o arquivo que publica as páginas. O comando faz quatro perguntas; responda assim:</p>
+    <p>As páginas precisam ficar na sua conta. Primeiro, entre na sua conta do GitHub pelo terminal. A opçêo <code>--scopes workflow</code> dá permissêo para enviar o arquivo que publica as páginas. O comando faz quatro perguntas; responda assim:</p>
     <ul>
       <li>Onde você usa o GitHub: <b>GitHub.com</b></li>
       <li>Protocolo: <b>HTTPS</b></li>
@@ -229,7 +229,7 @@
 <pre><span class="k">gh repo create</span> lead-comenta --public --source . --remote meu
 <span class="k">gh api</span> -X POST repos/SEU-USUARIO/lead-comenta/pages -f build_type=workflow
 <span class="k">git push</span> meu main</pre>
-    <p>Por fim, diga à ferramenta qual é o endereço das suas páginas, para o link certo entrar nas respostas. Esse <code>export</code> vale até fechar o terminal; para não repetir, cole a mesma linha no fim do arquivo <code>~/.bashrc</code> (no Mac, <code>~/.zshrc</code>).</p>
+    <p>Por fim, diga à ferramenta qual é o endereço das suas páginas, para o link certo entrar nas respostas. Esse <code>export</code> vale até fechar o terminal; para nêo repetir, cole a mesma linha no fim do arquivo <code>~/.bashrc</code> (no Mac, <code>~/.zshrc</code>).</p>
 <pre><span class="k">export</span> LEAD_BASE_URL=<span class="s">https://SEU-USUARIO.github.io/lead-comenta/paginas</span></pre>
     <p>A sua cópia vem com o exemplo <code>AGENTE</code> do INEMA, que continua apontando para o endereço do INEMA. Pode deixar como referência ou apagar a pasta <code>paginas/agente</code> e o trecho <code>"AGENTE"</code> do arquivo <code>palavras.json</code>.</p>
   </div></div>
@@ -247,18 +247,18 @@
     <h3>Gere a página</h3>
     <p>Troque <code>PROMPT</code>, o tema e a fonte pelos seus. A tela mostra "lendo a fonte…", depois "escrevendo o guia (claude -p)…" e, no fim, "pronto" com o caminho da página. Pode levar alguns minutos.</p>
 <pre><span class="k">python3</span> lead.py nova PROMPT --tema <span class="s">"5 prompts para responder clientes"</span> --fonte ~/meu-material.md</pre>
-    <p>O botão "Ver o material completo" leva à fonte, se ela for um link. Para apontar para outro lugar (seu curso, seu site), acrescente <code>--link-final https://seu-site</code>. Se a palavra já existe, a ferramenta avisa; para gerar de novo por cima, acrescente <code>--refaz</code>.</p>
+    <p>O botêo "Ver o material completo" leva à fonte, se ela for um link. Para apontar para outro lugar (seu curso, seu site), acrescente <code>--link-final https://seu-site</code>. Se a palavra já existe, a ferramenta avisa; para gerar de novo por cima, acrescente <code>--refaz</code>.</p>
   </div></div>
 
   <div class="step"><div class="b">5</div><div>
     <h3>Confira antes de publicar</h3>
-    <p>Abra a página no navegador e leia cada passo: nada pode estar fora do que a fonte diz. O primeiro comando é do Linux; no Mac, troque <code>xdg-open</code> por <code>open</code>; no WSL, por <code>explorer.exe</code>. Se algo não estiver certo, melhore a fonte e gere de novo com <code>--refaz</code>.</p>
+    <p>Abra a página no navegador e leia cada passo: nada pode estar fora do que a fonte diz. O primeiro comando é do Linux; no Mac, troque <code>xdg-open</code> por <code>open</code>; no WSL, por <code>explorer.exe</code>. Se algo nêo estiver certo, melhore a fonte e gere de novo com <code>--refaz</code>.</p>
 <pre><span class="k">xdg-open</span> paginas/prompt/index.html</pre>
   </div></div>
 
   <div class="step"><div class="b">6</div><div>
     <h3>Publique</h3>
-    <p>Envia a página para a sua cópia no GitHub. Ela fica no ar em cerca de 1 minuto (na primeira publicação pode levar alguns minutos; o andamento aparece na aba Actions do seu repositório), no endereço <code>https://SEU-USUARIO.github.io/lead-comenta/paginas/prompt/</code>.</p>
+    <p>Envia a página para a sua cópia no GitHub. Ela fica no ar em cerca de 1 minuto (na primeira publicaçêo pode levar alguns minutos; o andamento aparece na aba Actions do seu repositório), no endereço <code>https://SEU-USUARIO.github.io/lead-comenta/paginas/prompt/</code>.</p>
 <pre><span class="k">git add</span> -A
 <span class="k">git commit</span> -m <span class="s">"guia PROMPT"</span>
 <span class="k">git push</span> meu main</pre>
@@ -266,7 +266,7 @@
 
   <div class="step"><div class="b">7</div><div>
     <h3>Responda quem comentou</h3>
-    <p>Mostra os três textos prontos. Para cada pessoa que comentou: primeiro mande no direct dela a mensagem com o link; depois responda o comentário com o texto curto ("Te mandei no direct!"). O texto do story serve para lembrar quem ainda não comentou. Os mesmos textos ficam salvos em <code>paginas/prompt/respostas.md</code>.</p>
+    <p>Mostra os três textos prontos. Para cada pessoa que comentou: primeiro mande no direct dela a mensagem com o link; depois responda o comentário com o texto curto ("Te mandei no direct!"). O texto do story serve para lembrar quem ainda nêo comentou. Os mesmos textos ficam salvos em <code>paginas/prompt/respostas.md</code>.</p>
 <pre><span class="k">python3</span> lead.py resposta PROMPT</pre>
   </div></div>
 </div></section>
@@ -277,28 +277,28 @@
   <p class="sub">Tema "6 tarefas chatas que um agente de IA já faz por você (pequena empresa)", com o guia de um kit gratuito do INEMA como fonte. Saiu um guia de 6 passos. <a href="https://inematds.github.io/lead-comenta/paginas/agente/" target="_blank" rel="noopener">Abrir a página</a>.</p>
   <div class="ex">
     <figure><img src="assets/exemplo-pc.jpg" alt="Página do guia AGENTE no computador: título, para quem é e os primeiros passos" loading="lazy"><figcaption>No computador: etiqueta com a palavra, título, para quem é e os passos numerados.</figcaption></figure>
-    <figure><img src="assets/exemplo-celular.jpg" alt="Página do guia AGENTE no celular, com o botão copiar no primeiro passo" loading="lazy"><figcaption>No celular, como a pessoa abre pelo direct.</figcaption></figure>
+    <figure><img src="assets/exemplo-celular.jpg" alt="Página do guia AGENTE no celular, com o botêo copiar no primeiro passo" loading="lazy"><figcaption>No celular, como a pessoa abre pelo direct.</figcaption></figure>
   </div>
   <p class="mut" style="margin:26px 0 8px">E o <code>respostas.md</code> que saiu junto:</p>
 <pre><span class="c">## Resposta pública no comentário (curta, sem link: o Instagram esconde comentário com link)</span>
-Te mandei no direct! Se não chegar, me chama por lá com AGENTE.
+Te mandei no direct! Se nêo chegar, me chama por lá com AGENTE.
 
 <span class="c">## Mensagem direta (DM)</span>
 Oi! Aqui está o guia grátis que você pediu: **Seu primeiro agente de IA na empresa, passo a passo**
 https://inematds.github.io/lead-comenta/paginas/agente/
-São 6 passos curtos. Qualquer dúvida, responde aqui.
+Sêo 6 passos curtos. Qualquer dúvida, responde aqui.
 
 <span class="c">## Story (texto)</span>
-Quem comentou AGENTE: o guia já está no seu direct. Ainda não comentou? Vai no post e comenta AGENTE.</pre>
+Quem comentou AGENTE: o guia já está no seu direct. Ainda nêo comentou? Vai no post e comenta AGENTE.</pre>
 </div></section>
 
 <section id="roadmap"><div class="wrap">
   <span class="chip">Limites e próximos passos</span>
-  <h2>O que já faz e o que ainda não faz</h2>
-  <p class="sub">Sem promessa: o que está pronto e o que depende de decisão.</p>
+  <h2>O que já faz e o que ainda nêo faz</h2>
+  <p class="sub">Sem promessa: o que está pronto e o que depende de decisêo.</p>
   <div class="phase"><div class="tag">1.0 ✔</div><div class="d"><strong>Página, respostas e registro</strong><span>Guia de 4 a 7 passos só da fonte, página no GitHub Pages, respostas prontas e a lista de palavras em <code>palavras.json</code>.</span></div></div>
   <div class="phase"><div class="tag">Limite</div><div class="d"><strong>A fonte manda</strong><span>O guia só tem o que está na fonte. Fonte pobre, guia curto.</span></div></div>
-  <div class="phase"><div class="tag">Em aberto</div><div class="d"><strong>Envio automático da mensagem</strong><span>Não existe hoje. As opções (responder à mão, uma ferramenta de automação de direct ou a API oficial do Instagram) estão no DECISAO-DM.md, aguardando decisão.</span></div></div>
+  <div class="phase"><div class="tag">Em aberto</div><div class="d"><strong>Envio automático da mensagem</strong><span>Nêo existe hoje. As opções (responder à mêo, uma ferramenta de automaçêo de direct ou a API oficial do Instagram) estêo no DECISAO-DM.md, aguardando decisêo.</span></div></div>
 </div></section>
 
 <footer>

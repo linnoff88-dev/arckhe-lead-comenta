@@ -5,7 +5,7 @@
   "passos": [
     {
       "titulo": "Liste as tarefas que se repetem",
-      "texto": "Anote as tarefas que acontecem toda semana na empresa. Se você não lembra de todas, peça para a equipe anotar por três dias. Para cada uma, escreva quantas vezes ela acontece por semana e quantos minutos leva. Uma estimativa já serve.",
+      "texto": "Anote as tarefas que acontecem toda semana na empresa. Se você nêo lembra de todas, peça para a equipe anotar por três dias. Para cada uma, escreva quantas vezes ela acontece por semana e quantos minutos leva. Uma estimativa já serve.",
       "comando": "Tarefa | Vezes por semana | Minutos | Regra clara? | Dado já no computador? | Estrago se der errado"
     },
     {
@@ -15,12 +15,12 @@
     },
     {
       "titulo": "Calcule quanto custa cada tarefa",
-      "texto": "Pegue o primeiro da fila. Compare o custo de hoje, com gente fazendo, com o custo do agente: a conta da IA mais o tempo de alguém revisando. O número que importa é o custo por tarefa, contando a revisão e as tarefas que voltam para uma pessoa.",
+      "texto": "Pegue o primeiro da fila. Compare o custo de hoje, com gente fazendo, com o custo do agente: a conta da IA mais o tempo de alguém revisando. O número que importa é o custo por tarefa, contando a revisêo e as tarefas que voltam para uma pessoa.",
       "comando": ""
     },
     {
       "titulo": "Confira se o agente pode ser ligado",
-      "texto": "O agente só pode acessar o que a tarefa precisa, e alguém precisa acompanhar o que ele faz. Passe pelo checklist do agente seguro. Os itens 2, 4 e 10 são obrigatórios: se faltar qualquer um deles, o agente fica no piloto e uma pessoa supervisiona.",
+      "texto": "O agente só pode acessar o que a tarefa precisa, e alguém precisa acompanhar o que ele faz. Passe pelo checklist do agente seguro. Os itens 2, 4 e 10 sêo obrigatórios: se faltar qualquer um deles, o agente fica no piloto e uma pessoa supervisiona.",
       "comando": ""
     },
     {
