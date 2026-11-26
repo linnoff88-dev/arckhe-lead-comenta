@@ -5,9 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>lead-comenta — de «comenta PALABRA» a la página de la guía gratis</title>
 <meta name="description" content="Herramienta que convierte la invitación «comenta PALABRA» de tu publicación en una página con material gratis en GitHub Pages, con respuestas listas para el comentario, el mensaje directo y la historia.">
-<link rel="alternate" hreflang="pt-BR" href="https://inematds.github.io/lead-comenta/guia/">
-<link rel="alternate" hreflang="en" href="https://inematds.github.io/lead-comenta/guia/en/">
-<link rel="alternate" hreflang="es" href="https://inematds.github.io/lead-comenta/guia/es/">
+<link rel="alternate" hreflang="pt-BR" href="https://linnoff88-dev.github.io/arckhe-/guia/">
+<link rel="alternate" hreflang="en" href="https://linnoff88-dev.github.io/arckhe-/guia/en/">
+<link rel="alternate" hreflang="es" href="https://linnoff88-dev.github.io/arckhe-/guia/es/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
@@ -42,8 +42,8 @@
   nav .brand{display:flex;align-items:center;gap:8px;font-family:Sora;font-weight:800;letter-spacing:-.02em;color:var(--amb)}
   nav .brand .emoji{font-size:1.25rem}
   nav .sep{color:var(--mut);opacity:.45}
-  nav .inema{color:var(--sky);font-weight:600;font-size:.88rem;font-family:Sora}
-  nav .inema:hover{filter:brightness(1.15)}
+  nav .ARCKHÉ{color:var(--sky);font-weight:600;font-size:.88rem;font-family:Sora}
+  nav .ARCKHÉ:hover{filter:brightness(1.15)}
   nav .pro{color:var(--pro);font-weight:600;font-size:.88rem;font-family:Sora}
   nav .pro:hover{filter:brightness(1.15)}
   nav .clubpro{display:inline-flex;align-items:center;gap:6px}
@@ -119,9 +119,9 @@
   <a class="brand" href="#top"><span class="emoji">💬</span> lead-comenta</a>
   <span class="sep">|</span>
   <span class="clubpro">
-    <a class="inema" href="https://inema.club" target="_blank" rel="noopener">INEMA.CLUB</a>
+    <a class="ARCKHÉ" href="https://ARCKHÉ AI" target="_blank" rel="noopener">ARCKHÉ AI</a>
     <span class="sep">-</span>
-    <a class="pro" href="https://inema.pro" target="_blank" rel="noopener">PRO</a>
+    <a class="pro" href="https://ARCKHÉ.pro" target="_blank" rel="noopener">PRO</a>
   </span>
   <div class="links">
     <a class="sec" href="#oque">Qué es</a>
@@ -131,7 +131,7 @@
     <a class="sec" href="#roadmap">Límites</a>
     <span class="lang"><a href="../">PT</a><a href="../en/">EN</a><a class="on" href="./">ES</a></span>
     <button class="tgl" id="themeToggle" aria-label="Cambiar tema" title="Cambiar tema">🌙</button>
-    <a class="btn" href="https://github.com/inematds/lead-comenta" target="_blank" rel="noopener">GitHub</a>
+    <a class="btn" href="https://github.com/linnoff88-dev/lead-comenta" target="_blank" rel="noopener">GitHub</a>
   </div>
 </div></nav>
 
@@ -144,7 +144,7 @@
       <p class="lead">Tú indicas la palabra, el tema y de dónde obtener el contenido. Se publica una página con material gratis y quedan listas las respuestas para pegar en el comentario, el mensaje directo y la historia.</p>
       <div class="cta">
         <a class="btn" href="#guia">Empezar la guía</a>
-        <a class="btn ghost" href="https://github.com/inematds/lead-comenta" target="_blank" rel="noopener">Ver en GitHub</a>
+        <a class="btn ghost" href="https://github.com/linnoff88-dev/lead-comenta" target="_blank" rel="noopener">Ver en GitHub</a>
       </div>
     </div>
     <figure><img src="../assets/banner-es.jpg" alt="Banner de lead-comenta: el comentario se convierte en una guía"></figure>
@@ -183,7 +183,7 @@
   </div>
   <div class="aviso">
     <h3>¿Y el mensaje automático por mensaje directo?</h3>
-    <p>Todavía no existe. lead-comenta no envía mensajes a nadie: tú (o alguien de tu equipo) abre el mensaje directo de quien comentó y pega el texto listo. Las opciones para automatizar el envío están descritas en el <a href="https://github.com/inematds/lead-comenta/blob/main/DECISAO-DM.md" target="_blank" rel="noopener">DECISAO-DM.md</a> (en portugués) y todavía no se eligieron.</p>
+    <p>Todavía no existe. lead-comenta no envía mensajes a nadie: tú (o alguien de tu equipo) abre el mensaje directo de quien comentó y pega el texto listo. Las opciones para automatizar el envío están descritas en el <a href="https://github.com/linnoff88-dev/lead-comenta/blob/main/DECISAO-DM.md" target="_blank" rel="noopener">DECISAO-DM.md</a> (en portugués) y todavía no se eligieron.</p>
   </div>
 </div></section>
 
@@ -206,7 +206,7 @@
   <div class="step"><div class="b">1</div><div>
     <h3>Descarga el proyecto y pruébalo</h3>
     <p>Descarga la herramienta y muestra las palabras que ya existen. Si aparece la línea de <code>AGENTE</code> (el ejemplo incluido), está funcionando.</p>
-<pre><span class="k">git clone</span> <span class="s">https://github.com/inematds/lead-comenta</span> ~/lead-comenta
+<pre><span class="k">git clone</span> <span class="s">https://github.com/linnoff88-dev/lead-comenta</span> ~/lead-comenta
 <span class="k">cd</span> ~/lead-comenta
 <span class="k">python3</span> lead.py lista</pre>
   </div></div>
@@ -231,7 +231,7 @@
 <span class="k">git push</span> mio main</pre>
     <p>Por último, dile a la herramienta cuál es la dirección de tus páginas para que incluya el enlace correcto en las respuestas. Este <code>export</code> es válido hasta que cierres la terminal; para no repetirlo, pega la misma línea al final del archivo <code>~/.bashrc</code> (en Mac, <code>~/.zshrc</code>).</p>
 <pre><span class="k">export</span> LEAD_BASE_URL=<span class="s">https://TU-USUARIO.github.io/lead-comenta/paginas</span></pre>
-    <p>Tu copia incluye el ejemplo <code>AGENTE</code> de INEMA, que sigue apuntando a la dirección de INEMA. Puedes dejarlo como referencia o borrar la carpeta <code>paginas/agente</code> y el fragmento <code>"AGENTE"</code> del archivo <code>palavras.json</code>.</p>
+    <p>Tu copia incluye el ejemplo <code>AGENTE</code> de ARCKHÉ, que sigue apuntando a la dirección de ARCKHÉ. Puedes dejarlo como referencia o borrar la carpeta <code>paginas/agente</code> y el fragmento <code>"AGENTE"</code> del archivo <code>palavras.json</code>.</p>
   </div></div>
 
   <div class="step"><div class="b">3</div><div>
@@ -274,7 +274,7 @@
 <section id="exemplos"><div class="wrap">
   <span class="chip">Ejemplo</span>
   <h2>La página de la palabra AGENTE</h2>
-  <p class="sub">Tema «6 tareas tediosas que un agente de IA ya hace por ti (pequeña empresa)», con una guía de un kit gratis de INEMA como fuente. Se generó una guía de 6 pasos. <a href="https://inematds.github.io/lead-comenta/paginas/agente/" target="_blank" rel="noopener">Abrir la página</a>.</p>
+  <p class="sub">Tema «6 tareas tediosas que un agente de IA ya hace por ti (pequeña empresa)», con una guía de un kit gratis de ARCKHÉ como fuente. Se generó una guía de 6 pasos. <a href="https://linnoff88-dev.github.io/arckhe-/paginas/agente/" target="_blank" rel="noopener">Abrir la página</a>.</p>
   <div class="ex">
     <figure><img src="../assets/exemplo-pc.jpg" alt="Página de la guía AGENTE en la computadora: título, para quién es y los primeros pasos" loading="lazy"><figcaption>En la computadora: etiqueta con la palabra, título, para quién es y pasos numerados.</figcaption></figure>
     <figure><img src="../assets/exemplo-celular.jpg" alt="Página de la guía AGENTE en el celular, con el botón para copiar en el primer paso" loading="lazy"><figcaption>En el celular, tal como la persona la abre desde el mensaje directo.</figcaption></figure>
@@ -285,7 +285,7 @@ Te mandei no direct! Se nêo chegar, me chama por lá com AGENTE.
 
 <span class="c">## Mensagem direta (DM)</span>
 Oi! Aqui está o guia grátis que você pediu: **Seu primeiro agente de IA na empresa, passo a passo**
-https://inematds.github.io/lead-comenta/paginas/agente/
+https://linnoff88-dev.github.io/arckhe-/paginas/agente/
 Sêo 6 passos curtos. Qualquer dúvida, responde aqui.
 
 <span class="c">## Story (texto)</span>
@@ -305,8 +305,8 @@ Quem comentou AGENTE: o guia já está no seu direct. Ainda nêo comentou? Vai n
   <div class="wrap">
     <div class="pill">Python 3</div><div class="pill">Claude Code (suscripción)</div><div class="pill">GitHub Pages</div>
     <p style="margin-top:18px">lead-comenta · código MIT ·
-      <a href="https://github.com/inematds/lead-comenta">inematds/lead-comenta</a> ·
-      <a href="https://inema.club">INEMA.CLUB</a></p>
+      <a href="https://github.com/linnoff88-dev/lead-comenta">linnoff88-dev/lead-comenta</a> ·
+      <a href="https://ARCKHÉ AI">ARCKHÉ AI</a></p>
   </div>
 </footer>
 

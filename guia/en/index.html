@@ -5,9 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>lead-comenta — from “comment WORD” to your free guide page</title>
 <meta name="description" content="A tool that turns the “comment WORD” invitation in your post into a free resource page on GitHub Pages, with replies ready for the comment, direct message, and story.">
-<link rel="alternate" hreflang="pt-BR" href="https://inematds.github.io/lead-comenta/guia/">
-<link rel="alternate" hreflang="en" href="https://inematds.github.io/lead-comenta/guia/en/">
-<link rel="alternate" hreflang="es" href="https://inematds.github.io/lead-comenta/guia/es/">
+<link rel="alternate" hreflang="pt-BR" href="https://linnoff88-dev.github.io/arckhe-/guia/">
+<link rel="alternate" hreflang="en" href="https://linnoff88-dev.github.io/arckhe-/guia/en/">
+<link rel="alternate" hreflang="es" href="https://linnoff88-dev.github.io/arckhe-/guia/es/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
@@ -42,8 +42,8 @@
   nav .brand{display:flex;align-items:center;gap:8px;font-family:Sora;font-weight:800;letter-spacing:-.02em;color:var(--amb)}
   nav .brand .emoji{font-size:1.25rem}
   nav .sep{color:var(--mut);opacity:.45}
-  nav .inema{color:var(--sky);font-weight:600;font-size:.88rem;font-family:Sora}
-  nav .inema:hover{filter:brightness(1.15)}
+  nav .ARCKHÉ{color:var(--sky);font-weight:600;font-size:.88rem;font-family:Sora}
+  nav .ARCKHÉ:hover{filter:brightness(1.15)}
   nav .pro{color:var(--pro);font-weight:600;font-size:.88rem;font-family:Sora}
   nav .pro:hover{filter:brightness(1.15)}
   nav .clubpro{display:inline-flex;align-items:center;gap:6px}
@@ -119,9 +119,9 @@
   <a class="brand" href="#top"><span class="emoji">💬</span> lead-comenta</a>
   <span class="sep">|</span>
   <span class="clubpro">
-    <a class="inema" href="https://inema.club" target="_blank" rel="noopener">INEMA.CLUB</a>
+    <a class="ARCKHÉ" href="https://ARCKHÉ AI" target="_blank" rel="noopener">ARCKHÉ AI</a>
     <span class="sep">-</span>
-    <a class="pro" href="https://inema.pro" target="_blank" rel="noopener">PRO</a>
+    <a class="pro" href="https://ARCKHÉ.pro" target="_blank" rel="noopener">PRO</a>
   </span>
   <div class="links">
     <a class="sec" href="#oque">What it is</a>
@@ -131,7 +131,7 @@
     <a class="sec" href="#roadmap">Limits</a>
     <span class="lang"><a href="../">PT</a><a class="on" href="./">EN</a><a href="../es/">ES</a></span>
     <button class="tgl" id="themeToggle" aria-label="Toggle theme" title="Toggle theme">🌙</button>
-    <a class="btn" href="https://github.com/inematds/lead-comenta" target="_blank" rel="noopener">GitHub</a>
+    <a class="btn" href="https://github.com/linnoff88-dev/lead-comenta" target="_blank" rel="noopener">GitHub</a>
   </div>
 </div></nav>
 
@@ -144,7 +144,7 @@
       <p class="lead">You choose the word, the topic, and where the content comes from. The tool publishes a free resource page and prepares replies you can paste into the comment, direct message, and story.</p>
       <div class="cta">
         <a class="btn" href="#guia">Start the guide</a>
-        <a class="btn ghost" href="https://github.com/inematds/lead-comenta" target="_blank" rel="noopener">View on GitHub</a>
+        <a class="btn ghost" href="https://github.com/linnoff88-dev/lead-comenta" target="_blank" rel="noopener">View on GitHub</a>
       </div>
     </div>
     <figure><img src="../assets/banner-en.jpg" alt="lead-comenta banner: a comment becomes a guide"></figure>
@@ -183,7 +183,7 @@
   </div>
   <div class="aviso">
     <h3>What about automatic direct messages?</h3>
-    <p>That feature isn’t available yet. lead-comenta doesn’t message anyone: you (or someone on your team) open the direct message from the person who commented and paste the ready-made text. The options for automating messages are described in <a href="https://github.com/inematds/lead-comenta/blob/main/DECISAO-DM.md" target="_blank" rel="noopener">DECISAO-DM.md</a> (in Portuguese) and haven’t been chosen yet.</p>
+    <p>That feature isn’t available yet. lead-comenta doesn’t message anyone: you (or someone on your team) open the direct message from the person who commented and paste the ready-made text. The options for automating messages are described in <a href="https://github.com/linnoff88-dev/lead-comenta/blob/main/DECISAO-DM.md" target="_blank" rel="noopener">DECISAO-DM.md</a> (in Portuguese) and haven’t been chosen yet.</p>
   </div>
 </div></section>
 
@@ -206,7 +206,7 @@
   <div class="step"><div class="b">1</div><div>
     <h3>Download the project and try it</h3>
     <p>Download the tool and list the words that already exist. If you see the <code>AGENTE</code> line (the included example), it’s working.</p>
-<pre><span class="k">git clone</span> <span class="s">https://github.com/inematds/lead-comenta</span> ~/lead-comenta
+<pre><span class="k">git clone</span> <span class="s">https://github.com/linnoff88-dev/lead-comenta</span> ~/lead-comenta
 <span class="k">cd</span> ~/lead-comenta
 <span class="k">python3</span> lead.py lista</pre>
   </div></div>
@@ -231,7 +231,7 @@
 <span class="k">git push</span> mine main</pre>
     <p>Finally, tell the tool your page address so the correct link appears in the replies. This <code>export</code> stays in effect until you close the terminal. To avoid repeating it, add the same line to the end of <code>~/.bashrc</code> (on Mac, <code>~/.zshrc</code>).</p>
 <pre><span class="k">export</span> LEAD_BASE_URL=<span class="s">https://YOUR-USERNAME.github.io/lead-comenta/paginas</span></pre>
-    <p>Your copy includes the INEMA <code>AGENTE</code> example, which still points to INEMA’s address. Keep it as a reference or delete the <code>paginas/agente</code> folder and the <code>"AGENTE"</code> section from the <code>palavras.json</code> file.</p>
+    <p>Your copy includes the ARCKHÉ <code>AGENTE</code> example, which still points to ARCKHÉ’s address. Keep it as a reference or delete the <code>paginas/agente</code> folder and the <code>"AGENTE"</code> section from the <code>palavras.json</code> file.</p>
   </div></div>
 
   <div class="step"><div class="b">3</div><div>
@@ -274,7 +274,7 @@
 <section id="exemplos"><div class="wrap">
   <span class="chip">Example</span>
   <h2>The page for the word AGENTE</h2>
-  <p class="sub">Topic: “6 boring tasks an AI agent can already do for you (small business),” using a free INEMA kit as the source. The tool produced a 6-step guide. <a href="https://inematds.github.io/lead-comenta/paginas/agente/" target="_blank" rel="noopener">Open the page</a>.</p>
+  <p class="sub">Topic: “6 boring tasks an AI agent can already do for you (small business),” using a free ARCKHÉ kit as the source. The tool produced a 6-step guide. <a href="https://linnoff88-dev.github.io/arckhe-/paginas/agente/" target="_blank" rel="noopener">Open the page</a>.</p>
   <div class="ex">
     <figure><img src="../assets/exemplo-pc.jpg" alt="AGENTE guide page on a computer: title, who it’s for, and the first steps" loading="lazy"><figcaption>On a computer: the word label, title, who it’s for, and numbered steps.</figcaption></figure>
     <figure><img src="../assets/exemplo-celular.jpg" alt="AGENTE guide page on a phone, with the copy button on the first step" loading="lazy"><figcaption>On a phone, as someone opens it from a direct message.</figcaption></figure>
@@ -285,7 +285,7 @@ Te mandei no direct! Se nêo chegar, me chama por lá com AGENTE.
 
 <span class="c">## Mensagem direta (DM)</span>
 Oi! Aqui está o guia grátis que você pediu: **Seu primeiro agente de IA na empresa, passo a passo**
-https://inematds.github.io/lead-comenta/paginas/agente/
+https://linnoff88-dev.github.io/arckhe-/paginas/agente/
 Sêo 6 passos curtos. Qualquer dúvida, responde aqui.
 
 <span class="c">## Story (texto)</span>
@@ -305,8 +305,8 @@ Quem comentou AGENTE: o guia já está no seu direct. Ainda nêo comentou? Vai n
   <div class="wrap">
     <div class="pill">Python 3</div><div class="pill">Claude Code (subscription)</div><div class="pill">GitHub Pages</div>
     <p style="margin-top:18px">lead-comenta · MIT license ·
-      <a href="https://github.com/inematds/lead-comenta">inematds/lead-comenta</a> ·
-      <a href="https://inema.club">INEMA.CLUB</a></p>
+      <a href="https://github.com/linnoff88-dev/lead-comenta">linnoff88-dev/lead-comenta</a> ·
+      <a href="https://ARCKHÉ AI">ARCKHÉ AI</a></p>
   </div>
 </footer>
 

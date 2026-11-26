@@ -2,13 +2,13 @@
 """lead-comenta — "comenta PALAVRA que eu te mando o guia": a página do guia grátis e as respostas prontas.
 
 Uso:
-  python3 lead.py nova AGENTE --tema "6 tarefas chatas que um agente faz" --fonte https://inematds.github.io/x/guia/
-  python3 lead.py nova AGENTE --tema "..." --fonte notas.md --link-final https://inema.club/curso
+  python3 lead.py nova AGENTE --tema "6 tarefas chatas que um agente faz" --fonte https://linnoff88-dev.github.io/arckhe-/guia/
+  python3 lead.py nova AGENTE --tema "..." --fonte notas.md --link-final https://ARCKHÉ AI/curso
   python3 lead.py lista                       # palavras já criadas e o link de cada uma
   python3 lead.py resposta AGENTE             # texto pronto para responder o comentário e a mensagem direta
 
 Gera paginas/<palavra>/index.html (página única, sem build) + paginas/<palavra>/respostas.md e registra em palavras.json.
-Publicar = git push (GitHub Pages serve https://inematds.github.io/lead-comenta/paginas/<palavra>/).
+Publicar = git push (GitHub Pages serve https://linnoff88-dev.github.io/arckhe-/paginas/<palavra>/).
 O texto do guia é escrito pelo claude -p (assinatura) SÓ a partir da fonte dada; nada inventado.
 Enviar a mensagem para quem comentou NêO é feito aqui (ver DECISAO-DM.md).
 """
@@ -25,7 +25,7 @@ from pathlib import Path
 
 RAIZ = Path(__file__).resolve().parent
 REG = RAIZ / "palavras.json"
-BASE_URL = os.environ.get("LEAD_BASE_URL", "https://inematds.github.io/lead-comenta/paginas")
+BASE_URL = os.environ.get("LEAD_BASE_URL", "https://linnoff88-dev.github.io/arckhe-/paginas")
 
 
 def registro():
@@ -43,7 +43,7 @@ def ler_fonte(fonte):
 
 
 def escrever_guia(palavra, tema, fonte_txt, link_final):
-    pedido = f"""Você escreve guias grátis curtos do INEMA (ensina IA na prática, de graça, para gente comum, sem hype, voz do Nei: "você", frase curta, verbo concreto).
+    pedido = f"""Você escreve guias grátis curtos do ARCKHÉ (ensina IA na prática, de graça, para gente comum, sem hype, voz do Nei: "você", frase curta, verbo concreto).
 Quem chega aqui comentou "{palavra}" num post sobre: {tema}.
 Escreva o guia usando SÓ as informações do material abaixo. Nêo invente número, ferramenta nem passo. Se faltar algo, deixe de fora.
 Devolva APENAS um JSON:
@@ -73,7 +73,7 @@ def pagina(palavra, g):
         + (f'<pre><code>{e(p["comando"])}</code><button class="cp" type="button">copiar</button></pre>' if p.get("comando") else "")
         + "</li>" for p in g["passos"])
     return f"""<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>{e(g['titulo'])} — guia grátis INEMA</title><meta name="description" content="{e(g['subtitulo'])}">
+<title>{e(g['titulo'])} — guia grátis ARCKHÉ</title><meta name="description" content="{e(g['subtitulo'])}">
 <style>
 @font-face{{font-family:Sora;font-weight:100 800;src:url(../../assets/Sora.ttf)}}
 :root{{--bg:#0c0c10;--card:#15151c;--line:#2a2a35;--ink:#f5f5f7;--mut:#aab4c3;--brand:#FACC15;--brand-ink:#1a1206}}
@@ -94,7 +94,7 @@ footer{{margin-top:40px;color:var(--mut);font-size:.85rem}}a{{color:var(--brand)
 <p class="cuidado"><b>Cuidado:</b> {e(g['cuidado'])}</p>
 <p>{e(g['proximo'])}</p>
 {f'<a class="cta" href="{e(g["link_final"])}">Ver o material completo</a>' if g.get('link_final') else ''}
-<footer>INEMA.CLUB · IA na prática, de graça · <a href="https://inema.club">inema.club</a></footer>
+<footer>ARCKHÉ AI · IA na prática, de graça · <a href="https://ARCKHÉ AI">ARCKHÉ AI</a></footer>
 </main><script>
 document.querySelectorAll('.cp').forEach(b=>b.addEventListener('click',()=>{{navigator.clipboard.writeText(b.previousElementSibling.textContent);b.textContent='copiado';setTimeout(()=>b.textContent='copiar',1500)}}));
 </script></body></html>
